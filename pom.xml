@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>Spring_mvc_Alishev</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>Spring_mvc_Alishev Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+<!--_______________________________________-->
+  <properties>
+    <project.build.sourseEnconing>UTF-8</project.build.sourseEnconing>
+<!--    Это свойство определяет кодировку исходных файлов проекта. Значение UTF-8 указывает, что все исходники -->
+<!--    написаны в кодировке UTF-8. Это помогает избежать проблем с символами, которые могут неправильно отображаться-->
+<!--    в разных кодировках.-->
+    <maven.compiler.sourse>1.7</maven.compiler.sourse>
+    <maven.compiler.target>1.7</maven.compiler.target>
+
+<!--    Эти две строки определяют версию Java, которую Maven будет использовать для компиляции исходного кода. -->
+<!--    Они задают, что:-->
+<!--    -->
+<!--    maven.compiler.source — версия исходного кода Java, который должен быть скомпилирован. В данном случае -->
+<!--    это Java 1.7. Это значит, что вы можете использовать функции, доступные в Java SE 7.-->
+<!--    -->
+<!--    maven.compiler.target — целевая версия байт-кода, которую будет создавать компилятор. В данном случае -->
+<!--    это также Java 1.7. Это гарантирует, что созданный байт-код будет совместим с JVM версии 1.7.-->
+  </properties>
+<!--_______________________________________-->
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>5.2.1.RELEASE</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.2.1.RELEASE</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>5.2.1.RELEASE</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>5.2.1.RELEASE</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring5 -->
+    <dependency>
+      <groupId>org.thymeleaf</groupId>
+      <artifactId>thymeleaf-spring5</artifactId>
+      <version>3.0.11.RELEASE</version>
+    </dependency>
+
+  </dependencies>
+  <build>
+    <finalName>Spring_mvc_Alishev</finalName>
+  </build>
+</project>
